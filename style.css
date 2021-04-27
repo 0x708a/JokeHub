@@ -1,0 +1,103 @@
+.home{
+    position: fixed;
+    top: 5%;
+    left: 5%;
+}
+
+.discover{
+    position: fixed;
+    top: 10%;
+    left: 5%;
+}
+
+.profile{
+    position: fixed;
+    top: 15%;
+    left: 5%;
+}
+
+.settings{
+    position: fixed;
+    top: 20%;
+    left: 5%;
+}
+
+.home,
+.discover,
+.profile,
+.settings{
+    min-width: 10%;
+}
+
+.c2{
+    position: relative;
+    left: 25%;
+    margin-top: 50px;
+    max-width: 50%;
+    min-height: 12%;
+    padding: 10px;
+}
+
+.laugh{
+    width: 3%;
+    height: 3%;
+    cursor: pointer;
+}
+
+.share{
+    width: 3%;
+    height: 3%;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+
+.t1{
+    position: fixed;
+    top: 7%;
+    right: 5%;
+}
+
+.t2{
+    position: fixed;
+    top: 12%;
+    right: 5%;
+}
+
+.t3{
+    position: fixed;
+    top: 17%;
+    right: 5%;
+}
+
+.t4{
+    position: fixed;
+    top: 22%;
+    right: 5%;
+}
+
+.t1,
+.t2,
+.t3,
+.t4{
+    min-width: 10%;
+}
+
+.trends{
+    position: fixed;
+    right: 5%;
+    top: 0%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.title{
+    position: fixed;
+    bottom: 3%;
+    left: 3%;
+    cursor: pointer;
+}
+
+.title:hover{
+    text-decoration: underline;
+}

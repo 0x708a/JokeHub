@@ -1,0 +1,21 @@
+<html lang="en">
+
+<head>
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="761412275454-nn8lk3g0gv4gnemm8ra26o1jf4ouq3pa.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+</head>
+
+<body>
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <div class="conntent"></div>
+    </div>
+    <script>
+        function onSignIn(googleUser) {
+            document.querySelector(".conntent").textContent = googleUser.getBasicProfile().getGivenName();
+            console.log("ID Token: " + id_token);
+        }
+    </script>
+</body>
+
+</html>
