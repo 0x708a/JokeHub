@@ -20,12 +20,23 @@ class Post {
         post.appendChild(laughE);
         post.appendChild(shareE);
 
-        post.style.position = "relative";
-        post.style.left = "25%";
-        post.style.marginTop = "50px";
-        post.style.maxWidth = "50%";
-        post.style.minHeight = "12%";
-        post.style.padding = "10px";
+        if (window.innerWidth <= 500) {
+            console.log("POGCHAMP")
+            post.style.position = "relative";
+            post.style.left = "10%";
+            post.style.marginTop = "50px";
+            post.style.maxWidth = "78%";
+            post.style.minHeight = "12%";
+            post.style.padding = "10px";
+        } else {
+            console.log("pog")
+            post.style.position = "relative";
+            post.style.left = "25%";
+            post.style.marginTop = "50px";
+            post.style.maxWidth = "50%";
+            post.style.minHeight = "12%";
+            post.style.padding = "10px";
+        }
 
         laughE.style.width = "3%";
         laughE.style.height = "3%";

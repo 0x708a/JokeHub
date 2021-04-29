@@ -101,3 +101,13 @@
 .title:hover{
     text-decoration: underline;
 }
+
+.menu,
+.close{
+    opacity: 0;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    max-width: 6%;
+    max-height: 6%;
+}

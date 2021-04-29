@@ -1,29 +1,27 @@
-const c1 = document.querySelector(".c1");
+const c1 = document.querySelectorAll(".c1");
 const c2 = document.querySelectorAll(".c2");
 const c3 = document.querySelectorAll(".c3");
 const laugh = document.querySelectorAll(".laugh");
 const share = document.querySelectorAll(".share");
 const title = document.querySelector(".title");
-
-
-postTemplate = {
-    "user": "Google",
-    "content": "Google is a very PogChamp company",
-    "likes": 100000
-}
+const menu = document.querySelector(".menu");
+const home = document.querySelector(".home");
+const discover = document.querySelector(".discover");
+const profile = document.querySelector(".profile");
+const settings = document.querySelector(".settings");
+const close = document.querySelector(".close");
 
 info = new Info()
 info.getPosts()
-setTimeout(function(){
-    console.log(info.posts);
-    console.log(Object.keys(info.posts).length);
+
+setTimeout(function() {
     for (i = 0; i < Object.keys(info.posts).length; i++) {
         new Post(info.posts[i]["user"], info.posts[i]["content"], info.posts[i]["likes"]);
     }
-},1000);
+}, 1000)
 
 
-
+console.log(window.innerWidth);
 
 title.addEventListener("click", () => {
     window.location.href = "#"
@@ -40,7 +38,7 @@ if (window.innerWidth >= 1155) {
     }
 }
 
-if (window.innerWidth <= 1154) {
+if (window.innerWidth <= 1154 && window.innerWidth > 500) {
     document.querySelector(".trends").textContent = "Trending";
     document.querySelector(".trends").style.top = "25%";
     document.querySelector(".t1").style.top = "30%";
@@ -74,4 +72,75 @@ if (window.innerWidth <= 1154) {
     }
 }
 
-console.log(document.querySelectorAll("div"))
+if (window.innerWidth <= 500) {
+    menu.style.opacity = 1;
+    title.style.opacity = 0;
+
+    for (i = 0; i < c2.length; i ++) {
+        c2[i].style.minWidth = "78%";
+        c2[i].style.left = "10%";
+    }
+
+    for (i = 0; i < c1.length; i++) {
+        c1[i].style.opacity = 0;
+        c1[i].style.zIndex = -10;
+    }
+
+    for (i = 0; i < c3.length; i++) {
+        c3[i].style.opacity = 0;
+        c3[i].style.zIndex = -10;
+    }
+
+
+    title.style.zIndex = -10;
+}
+
+menu.addEventListener("click", () => {
+
+    menu.style.opacity = 0;
+    menu.style.zIndex = -10;
+
+    document.querySelector(".body").style.height = "100%";
+    document.querySelector(".body").style.overflow = "hidden";
+
+    for (i = 0; i < c2.length; i++) {
+        c2[i].style.opacity = 0;
+        c2[i].style.zIndex = -10;
+    }
+
+    for (i = 0; i < c1.length; i++) {
+        c1[i].style.opacity = 1;
+        c1[i].style.zIndex = 1;
+    }
+
+    close.style.opacity = 1;
+    close.style.zIndex = 1;
+
+});
+
+close.addEventListener("click", () => {
+    close.style.opacity = 0;
+    close.style.zIndex = -10;
+
+    document.querySelector(".body").style.height = "";
+    document.querySelector(".body").style.overflow = "unset";
+
+    for (i = 0; i < c2.length; i++) {
+        c2[i].style.opacity = 1;
+        c2[i].style.zIndex = 1;
+    }
+
+    for (i = 0; i < c1.length; i++) {
+        c1[i].style.opacity = 0;
+        c1[i].style.zIndex = -10;
+    }
+
+    menu.style.opacity = 1;
+    menu.style.zIndex = 1;
+
+})
+
+window.addEventListener("load", () => {
+    window.location.href = "#";
+    console.log("pohg")
+})
