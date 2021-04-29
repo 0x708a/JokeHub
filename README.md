@@ -6,4 +6,4 @@ JokeHub is a social media app i'm making that focuses on jokes and in  the futur
 I will recognise this website as a social media once it has an average of 100 users per day and I hope achieving this goal will not take 5 years!
 
 
-The webiste: jokehub.cf
+The webiste: https://jokehub.cf
