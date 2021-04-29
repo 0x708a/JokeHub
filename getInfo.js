@@ -5,7 +5,7 @@ class Info {
     }
 
     async getPosts() {
-        let response = await fetch("https://d2c3004b8f4d.ngrok.io/msg/get")
+        let response = await fetch("server url")
         this.posts = JSON.parse(await response.text());
         console.log(this.posts)
         if (response.ok) {
