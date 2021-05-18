@@ -15,6 +15,7 @@ const user = document.querySelectorAll(".user");
 
 title.textContent = "JokeHub (" + window.innerWidth + ")";
 
+/*
 info = new Info()
 info.getPosts()
 
@@ -23,6 +24,8 @@ setTimeout(function() {
         new Post(info.posts[i]["user"], info.posts[i]["content"], info.posts[i]["likes"]);
     }
 }, 1000)
+
+*/
 
 
 console.log(window.innerWidth);
