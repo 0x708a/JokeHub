@@ -75,8 +75,8 @@ if (window.innerWidth <= 1154 && window.innerWidth > 980) {
 }
 
 if (window.innerWidth <= 980) {
-    document.querySelector(".joke").style.fontSize = "4rem";
-    document.querySelector(".user").style.fontSize = "2rem";
+    document.querySelectorAll(".joke").style.fontSize = "3rem";
+    document.querySelectorAll(".user").style.fontSize = "2rem";
     menu.style.opacity = 1;
     title.style.opacity = 0;
 
