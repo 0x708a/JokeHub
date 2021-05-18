@@ -82,7 +82,7 @@ if (window.innerWidth <= 980) {
     }
 
     for (i = 0; i < user.lengh; i++) {
-        user[i].style.fontSize = "2rem";
+        user[i].style.fontSize = "2.5rem";
     }
     menu.style.opacity = 1;
     title.style.opacity = 0;
