@@ -10,6 +10,8 @@ const discover = document.querySelector(".discover");
 const profile = document.querySelector(".profile");
 const settings = document.querySelector(".settings");
 const close = document.querySelector(".close");
+const joke = document.querySelectorAll(".joke");
+const user = document.querySelectorAll(".user");
 
 title.textContent = "JokeHub (" + window.innerWidth + ")";
 
@@ -75,8 +77,13 @@ if (window.innerWidth <= 1154 && window.innerWidth > 980) {
 }
 
 if (window.innerWidth <= 980) {
-    document.querySelectorAll(".joke").style.fontSize = "3rem";
-    document.querySelectorAll(".user").style.fontSize = "2rem";
+    for (i = 0; i < joke.length; i++) {
+        joke[i].style.fontSize = "3rem";
+    }
+
+    for (i = 0; i < user.lengh; i++) {
+        user[i].style.fontSize = "2rem";
+    }
     menu.style.opacity = 1;
     title.style.opacity = 0;
 
