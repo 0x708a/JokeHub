@@ -72,7 +72,7 @@ if (window.innerWidth <= 1154 && window.innerWidth > 500) {
     }
 }
 
-if (window.innerWidth <= 500) {
+if (window.innerWidth <= 400) {
     menu.style.opacity = 1;
     title.style.opacity = 0;
 
