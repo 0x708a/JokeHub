@@ -40,7 +40,7 @@ if (window.innerWidth >= 1155) {
     }
 }
 
-if (window.innerWidth <= 1154 && window.innerWidth > 500) {
+if (window.innerWidth <= 1154 && window.innerWidth > 980) {
     document.querySelector(".trends").textContent = "Trending";
     document.querySelector(".trends").style.top = "25%";
     document.querySelector(".t1").style.top = "30%";
@@ -74,7 +74,7 @@ if (window.innerWidth <= 1154 && window.innerWidth > 500) {
     }
 }
 
-if (window.innerWidth <= 500) {
+if (window.innerWidth <= 980) {
     menu.style.opacity = 1;
     title.style.opacity = 0;
 
