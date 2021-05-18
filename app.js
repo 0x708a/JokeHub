@@ -11,6 +11,8 @@ const profile = document.querySelector(".profile");
 const settings = document.querySelector(".settings");
 const close = document.querySelector(".close");
 
+title.textContent = "JokeHub (" + window.innerWidth + ")";
+
 info = new Info()
 info.getPosts()
 
@@ -38,7 +40,7 @@ if (window.innerWidth >= 1155) {
     }
 }
 
-if (window.innerWidth <= 1154 && window.innerWidth > 300) {
+if (window.innerWidth <= 1154 && window.innerWidth > 500) {
     document.querySelector(".trends").textContent = "Trending";
     document.querySelector(".trends").style.top = "25%";
     document.querySelector(".t1").style.top = "30%";
@@ -72,7 +74,7 @@ if (window.innerWidth <= 1154 && window.innerWidth > 300) {
     }
 }
 
-if (window.innerWidth <= 300) {
+if (window.innerWidth <= 500) {
     menu.style.opacity = 1;
     title.style.opacity = 0;
 
